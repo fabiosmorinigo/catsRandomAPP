@@ -1,0 +1,220 @@
+:root {
+    --tipografy-title: 'Lobster', cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    width: 100%;
+    min-width: 320px;
+    height: 20vh;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-family: var(--tipografy-title);
+    color: #0066ff;
+    font-weight: bolder;
+}
+
+.header .logo {
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.main {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+}
+
+.main .main__random {
+    width: 100%;
+    display: grid;
+    column-gap: 30px;
+    padding: 16px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,300px));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(200px,300px);
+    overflow-x: auto;
+}
+
+.main .btnrandom {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(23, 192, 23);
+    font-weight: bolder;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main .main__random .main__random--items {
+    width: 220px;
+    height: 297px;
+    position: relative;
+}
+
+.main .main__random .main__random--items .btn-save1, .btn-save2, .btn-save3 {
+    background-color: #ffffff;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.main .main__random .main__random--items .btn:hover {
+    background-color: rgb(26, 190, 26);
+}
+
+.main .form {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+
+.main .form h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    color: #0066ff;
+    font-weight: bolder;
+    font-family: var(--tipografy-title);
+    margin-bottom: 10px;
+}
+
+.form  #file {
+    display: block;
+    margin: 0 auto;
+}
+
+.main .form button {
+    display: block;
+    margin: 30px auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: rgb(115, 124, 115);
+    border-radius: 17px;
+    color: #000;
+    font-weight: bolder;
+}
+
+.savecats__title {
+    text-align: center;
+    font-size: 2.3rem;
+    text-align: center;
+    color: #0066ff;
+    font-weight: bolder;
+    font-family: var(--tipografy-title);
+    margin-bottom: 10px;
+}
+
+
+.main .savecats {
+    width: 100%;
+    min-width: 320px;
+    display: grid;
+    column-gap: 30px;
+    padding: 16px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,300px));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(200px,300px);
+    overflow-x: auto;
+    margin-top: 10px;
+    height: auto;
+    position: relative;
+}
+
+.main .savecats img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 17px;
+}
+
+.main .savecats .btn-delete {
+    background-color: #c73320;
+    width: 30px;
+    height: 30px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.main .delete-section {
+    position: relative;
+    width: 220px;
+    height: 297px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 17px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .header h1 {
+        font-size: 6rem;
+    }
+
+    .main .btnrandom {
+        width: 300px;
+    }
+
+    .main .main__random {
+        width: 100%;
+        display: grid;
+        column-gap: 30px;
+        padding: 16px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main .main__random .main__random--items {
+        width: 600px;
+        height: 400px;
+    }
+    .main .main__random .main__random--items:hover {
+        transform: scaleY(-30px);
+    }
+
+    .main .form h2 {
+        font-size: 6rem;
+    }
+
+    .savecats__title {
+        font-size: 6rem;
+    }
+
+}
+
+
+
+
+

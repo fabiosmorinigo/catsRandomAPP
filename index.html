@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Random pictures of kittens">
+    <meta name="description" content="">
+    <meta name="author" content="Fabio Sosa">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <title>Cats APP</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Cats APP</h1>
+        <img src="./assets/logo.gif" alt="logo cats random" class="logo">
+    </header>
+   
+    <main class="main">
+        <section id="main__random" class="main__random">
+        
+                <section class="main__random--items">
+                    <img id="img1" alt="">
+                    <button class="btn-save1 btn"><img src="./assets/icon/fav.png" alt="icon favorite"></button>
+                </section>
+                <section class="main__random--items ">
+                    <img id="img2" alt="">
+                    <button class="btn-save2 btn"><img src="./assets/icon/fav.png" alt="icon favorite"></button>
+                </section>
+                <section class="main__random--items ">
+                    <img id="img3" alt="">
+                    <button class="btn-save3 btn"><img src="./assets/icon/fav.png" alt="icon favorite"></button>
+                </section>
+            
+        </section>
+        
+        <button type="button" id="btnrandom" class="btnrandom btn">Next</button>
+        
+        <section id="error"></section>
+    
+        <section class="form">
+            <h2>Upload your Cat photo</h2>
+            <form id="uploadForm">
+                <input id="file" type="file" name="file"/>
+                <button type="button" id="uploadFile">Upload</button>
+            </form>
+        </section>
+    
+        <h1 class="savecats__title">My Cats Favorite</h1>
+        <section id="savecats" class="savecats">
+        </section>
+    </main>
+   
+
+    <!-- <a target="_blank" href="https://icons8.com/icon/ftNtphswcHhO/gato">Gato</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
